@@ -3,9 +3,9 @@
 Given the following Bookmark tree:
 
 Bookmarks/
-└── comp
-    └── lang
-        ├── python
+└── comp/
+    └── lang/
+        ├── python/
         │   └── website1
         └── website2
 
