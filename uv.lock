@@ -1,0 +1,18 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "bookmark-conversion"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "netscape-bookmarks-file-parser" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "netscape-bookmarks-file-parser", git = "https://github.com/FlyingWolFox/Netscape-Bookmarks-File-Parser.git" }]
+
+[[package]]
+name = "netscape-bookmarks-file-parser"
+version = "1.1"
+source = { git = "https://github.com/FlyingWolFox/Netscape-Bookmarks-File-Parser.git#dd442165dcb8ecc32e03f1dffe84cb7b983522e9" }
