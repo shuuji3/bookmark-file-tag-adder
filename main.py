@@ -32,6 +32,7 @@ header = '''
 def assign_tags(bookmarks: BookmarkFolder | BookmarkShortcut):
     if type(bookmarks) is BookmarkShortcut:
         bookmarks.tags = make_tags(bookmarks)
+        # Linkding cannot import bookmark with title more than 512 length
         bookmarks.name = bookmarks.name[:500]
         return
 
